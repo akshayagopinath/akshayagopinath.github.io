@@ -62,3 +62,43 @@ body{
     width: 32px;
     margin-top: 20px;
 }
+
+.akshaya{
+    text-align: center;
+    color: teal;
+
+}
+
+.nextimage{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+
+.nextimage img{
+    height: 32px;
+    width: 32px;
+
+}
+
+.previousimage{
+    text-decoration: none;
+    font-size: 30px;
+    color: teal;
+    position: fixed;
+    bottom: 5px;
+
+}
+
+.previousimage img{
+    height: 32px;
+    width: 32px;
+
+}
+
+.openimage{
+    font-size: 20px;
+    color: teal;
+    display: block;
+}
