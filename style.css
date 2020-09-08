@@ -1,7 +1,25 @@
-.h1-white{
+.akshayaheading{
+    color:#718093;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10%;
+
+
+}
+.gopinathheading{
     color: white;
     text-align: center;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: -130px;
 }
+
+.gopinathheading:hover{
+    color:skyblue;
+}
+
 body{
     background-color:black;
 }
@@ -17,11 +35,18 @@ body{
     color: white;
 }
 .profile-picture{
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-top: 80px;
     display: block;
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 30%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius:20% ;
+    border-bottom-right-radius: 20%;
+
+    height: 250px;
+    
 }
 
 .div-para{
@@ -101,4 +126,13 @@ body{
     font-size: 20px;
     color: teal;
     display: block;
+}
+
+.headingsection{
+    display: inline-flex;
+
+}
+
+.headingname{
+
 }
