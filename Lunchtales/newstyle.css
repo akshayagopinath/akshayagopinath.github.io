@@ -1,0 +1,95 @@
+body{
+    background-color:black;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color:wheat;
+}
+
+header ul li:hover{
+    background-color:#80808075;
+    padding: 10px;
+}
+
+header img{
+    height: 32px;
+    margin-left: 20px;
+}
+
+header img, header ul {
+    display: inline;
+}
+
+header ul{
+    text-align: right;
+    width: 500px;
+    float: right;
+}
+
+header{
+    margin-bottom: 50px;
+  /* background-image:url(images/pattern_grey.png); */
+}
+
+.lunchtales-heading{
+font-size: 80px;
+text-align: center;
+font-family: 'Cinzel Decorative', cursive;
+color:wheat;
+width: max-content;
+background-color:#80808075;
+margin-left: auto;
+margin-right: auto;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+padding: 10px;
+}
+
+.main-section{
+    /*background-color:rgba(180, 20,40, .18);*/
+    background-image: url(food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 20px;
+    
+    
+}
+
+.article{
+    height: 300px;
+    background-color:rgba(239,234,243,0.74);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 20px;
+    bottom:-240px;
+    position: relative;
+}
+.div-heading{
+    /*width: max-content;
+    background-color:#80808075;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-bottom-left-radius: 500px;*/
+}
+
+
