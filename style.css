@@ -8,7 +8,7 @@
 
 }
 .gopinathheading{
-    color: white;
+    color:skyblue;
     text-align: center;
     font-size: 100px;
     font-family: 'Lato', sans-serif;
@@ -17,7 +17,7 @@
 }
 
 .gopinathheading:hover{
-    color:skyblue;
+    color:grey;
 }
 
 body{
@@ -59,7 +59,7 @@ body{
     padding: 2%;
     display: inline-flex;
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     
 }
 .div-image{
@@ -90,10 +90,10 @@ body{
     margin-top: 20px;
 }
 
-.akshaya{
-    text-align: center;
-    color: teal;
 
+.points{
+    color: whitesmoke;
+    font-size: 30px;
 }
 
 .nextimage{
@@ -115,9 +115,9 @@ body{
 .previousimage{
     text-decoration: none;
     font-size: 30px;
-    color: teal;
+    color:whitesmoke;
     position: fixed;
-    bottom: 5px;
+    bottom: 5px
 
 }
 
