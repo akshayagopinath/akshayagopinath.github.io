@@ -7,11 +7,60 @@
     <title>Document</title>
   </head>
   <body>
-    <div style="height: 20px"></div>
     <div id="smart-button-container">
       <div style="text-align: center">
-        <div id="paypal-button-container"></div>
+        <label for="description"></label
+        ><input
+          type="text"
+          name="descriptionInput"
+          id="description"
+          maxlength="127"
+          value=""
+          placeholder="Please Enter your name "
+          style="
+            color: black;
+            width: auto;
+            padding: 0 20px 0 20px;
+            height: 40px;
+          "
+        /><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </div>
+      <p
+        id="descriptionError"
+        style="
+          visibility: hidden;
+          color: red;
+          text-align: center;
+          display: inline;
+        "
+      >
+        Please enter your name
+      </p>
+      <div style="text-align: center">
+        <input
+          name="amountInput"
+          type="number"
+          id="amount"
+          value=""
+          placeholder="Please Enter  Amount"
+          style="
+            color: black;
+            width: auto;
+            padding: 0 20px 0 20px;
+            height: 40px;
+          "
+        /><span> USD</span>
+      </div>
+      <div
+        id="priceLabelError"
+        style="visibility: hidden; color: red; text-align: center"
+      >
+        Please enter an amount to pay
+      </div>
+      <div
+        style="text-align: center; margin-top: 0.625rem"
+        id="paypal-button-container"
+      ></div>
     </div>
     <script
       src="https://www.paypal.com/sdk/js?client-id=AYmswGrVnRYdx5pxiEDX6jn6U6CAjzP9rJ6zVbo2ZdrKVRK3cLma_hhilw6zh4ANYcIWezta0THA3YQb&enable-funding=venmo&currency=USD"
