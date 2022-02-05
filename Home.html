@@ -684,61 +684,6 @@
         </div>
       </div>
     </section>
-    <div id="smart-button-container">
-      <div style="text-align: center">
-        <label for="description"></label
-        ><input
-          type="text"
-          name="descriptionInput"
-          id="description"
-          maxlength="127"
-          value=""
-          placeholder="Please Enter your name "
-          style="
-            color: black;
-            width: auto;
-            padding: 0 20px 0 20px;
-            height: 40px;
-          "
-        /><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </div>
-      <p
-        id="descriptionError"
-        style="
-          visibility: hidden;
-          color: red;
-          text-align: center;
-          display: inline;
-        "
-      >
-        Please enter your name
-      </p>
-      <div style="text-align: center">
-        <input
-          name="amountInput"
-          type="number"
-          id="amount"
-          value=""
-          placeholder="Please Enter  Amount"
-          style="
-            color: black;
-            width: auto;
-            padding: 0 20px 0 20px;
-            height: 40px;
-          "
-        /><span> USD</span>
-      </div>
-      <div
-        id="priceLabelError"
-        style="visibility: hidden; color: red; text-align: center"
-      >
-        Please enter an amount to pay
-      </div>
-      <div
-        style="text-align: center; margin-top: 0.625rem"
-        id="paypal-button-container"
-      ></div>
-    </div>
 
     <footer
       class="u-align-left u-clearfix u-footer u-grey-80 u-footer"
@@ -746,57 +691,16 @@
     >
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </footer>
-    <div class="u-backlink u-clearfix u-grey-80">Payment Section</div>
-    <script
-      src="https://www.paypal.com/sdk/js?client-id=AYmswGrVnRYdx5pxiEDX6jn6U6CAjzP9rJ6zVbo2ZdrKVRK3cLma_hhilw6zh4ANYcIWezta0THA3YQb&enable-funding=venmo&currency=USD"
-      data-sdk-integration-source="button-factory"
-    ></script>
-    <script>
-      function initPayPalButton() {
-        paypal
-          .Buttons({
-            style: {
-              shape: "rect",
-              color: "gold",
-              layout: "vertical",
-              label: "paypal",
-            },
-
-            createOrder: function (data, actions) {
-              return actions.order.create({
-                purchase_units: [
-                  { amount: { currency_code: "USD", value: 1 } },
-                ],
-              })
-            },
-
-            onApprove: function (data, actions) {
-              return actions.order.capture().then(function (orderData) {
-                // Full available details
-                console.log(
-                  "Capture result",
-                  orderData,
-                  JSON.stringify(orderData, null, 2)
-                )
-
-                // Show a success message within this page, e.g.
-                const element = document.getElementById(
-                  "paypal-button-container"
-                )
-                element.innerHTML = ""
-                element.innerHTML = "<h3>Thank you for your payment!</h3>"
-
-                // Or go to another URL:  actions.redirect('thank_you.html');
-              })
-            },
-
-            onError: function (err) {
-              console.log(err)
-            },
-          })
-          .render("#paypal-button-container")
-      }
-      initPayPalButton()
-    </script>
+    <div class="u-backlink u-clearfix u-grey-80">
+      <a
+        href="https://akshayagopinath.in/pay.html"
+        class="u-align-center u-btn u-button-style u-hover-white u-palette-1-base u-btn-1"
+        data-animation-name="zoomIn"
+        data-animation-duration="1000"
+        data-animation-delay="0"
+        data-animation-direction=""
+        >Pay Now</a
+      >
+    </div>
   </body>
 </html>
