@@ -731,6 +731,7 @@
             type="number"
             id="amount"
             value=""
+            onchange="updateAmount()"
             placeholder="Please Enter  Amount"
             style="
               color: black;
@@ -757,6 +758,10 @@
       data-sdk-integration-source="button-factory"
     ></script>
     <script>
+      var amount = 100
+      function updateAmount() {
+        amount = document.getElementById("amount").value
+      }
       function initPayPalButton() {
         paypal
           .Buttons({
@@ -770,9 +775,10 @@
             createOrder: function (data, actions) {
               return actions.order.create({
                 purchase_units: [
-                  { amount: { currency_code: "USD", value: 1 } },
+                  { amount: { currency_code: "USD", value: amount } },
                 ],
               })
+              console.log(amount)
             },
 
             onApprove: function (data, actions) {
